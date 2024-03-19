@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#solar-system {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#solar-system svg {
+    display: block; 
+    background-color: #000; 
+    background-image: url('https://t3.ftcdn.net/jpg/02/66/25/12/360_F_266251260_lt1ONfTfr8VkjWc4xOSPUnubetJFh5xI.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 4px;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#info-card {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: none; 
+    z-index: 100; 
+    max-width: 400px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
